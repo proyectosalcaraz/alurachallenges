@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Magico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+        <h1>Encriptador Magico</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left">
+                <textarea id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="right">
+                <textarea id="outputText" readonly placeholder="Tu texto encriptado o desencriptado aparecerá aquí"></textarea>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="encryptText()">Encriptar</button>
+            <button onclick="decryptText()">Desencriptar</button>
+            <button onclick="copyText()">Copiar</button>
+            <button onclick="clearText()">Borrar</button>
+        </div>
+        <p id="message"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
